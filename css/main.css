@@ -1,0 +1,143 @@
+.hidden {
+    display: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-color: rgb(19, 112, 81);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#main-logo {
+    display: block;
+    width: 450px;
+    margin: 0 auto;
+}
+
+/* Character Nav */
+
+#character-navigation {
+    background-color: #675050;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url(../images/GGXrd_Background.jpeg);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+#characters {
+    list-style-type: none;
+    padding: 0px;
+    text-align: center;
+}
+
+#characters li {
+    display: inline-block;
+    margin: 10px;
+}
+
+#characters li img {
+    border: solid 1px white;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px 0 rgba(255, 255, 255, 0.9);
+    transition: all .2s ease-in-out;
+}
+
+#characters li a {
+    text-decoration: none;
+}
+
+#characters li img:hover {
+    filter: saturate(225%);
+    border-radius: 20%;
+}
+
+#instructions {
+    padding: 20px;
+}
+
+#instructions h3 {
+    font-size: 32px;
+    text-align: center;
+}
+
+#instructions p {
+    font-size: 18px;
+    text-align: center;
+}
+
+#main-footer {
+    height: 80px;
+    background-color: rgb(19, 112, 81);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Lightbox Rules */
+
+.lightbox {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: none;
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 40px bottom;
+}
+
+.lightbox:target {
+    display: block;
+}
+
+#lightbox1 {
+    background-image: url(../images/GGXRD-R_Sol_Portrait.png);
+}
+
+#lightbox2 {
+    background-image: url(../images/GGXRD-R_Sin_Portrait.png);
+}
+
+#lightbox3 {
+    background-image: url(../images/GGXRD-R_May_Portrait.png);
+}
+
+#lightbox4 {
+    background-image: url(../images/GGXRD-R_Faust_Portrait.png);
+}
+
+.lightbox-close {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 96vw;
+    transition: all .25s ease-in-out;
+}
+
+.lightbox-close:hover {
+    color: rgb(0, 151, 88);
+    
+}
+
+.lightbox section {
+    width: 600px;
+    margin-left: 40%;
+    margin-top: 60px;
+}
+
+.lightbox p {
+    line-height: 50px;
+}
